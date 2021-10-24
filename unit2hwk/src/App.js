@@ -3,6 +3,7 @@ import "./styles.css";
 import AllTheThings from "./Components/AllTheThings";
 import MyShoppingCart from "./Components/MyShoppingCart";
 import productsArr from "./products";
+import Form from "./Components/Form";
 
 export default function App() {
   const [products, setProducts] = useState(productsArr);
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Big Time Shopping</h1>
+      <Form />
       <div className="AllTheThings">
         <AllTheThings products={products} handleClick={addToCart} />
       </div>
